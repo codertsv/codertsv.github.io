@@ -2,7 +2,7 @@
 
 We meet every Monday at 11am for an hour to discuss all things R
 
-Our website is [codertsv.github.io](codertsv.github.io)
+Our website is [codertsv.github.io](https://codertsv.github.io)
 
 ### Past presentations
 
