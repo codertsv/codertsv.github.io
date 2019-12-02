@@ -9,3 +9,5 @@ Our website is [codertsv.github.io](https://codertsv.github.io)
 - 18 Nov 2019.  Ira Cooke presented an intro to RMarkdown. The rendered presentation can be viewed on [RPubs](http://rpubs.com/iracooke/rmarkdown_intro) and source code is on github at [https://github.com/iracooke/rmarkdown_intro](https://github.com/iracooke/rmarkdown_intro)
 
 - 25 Nov 2019. Cesar (@CexyNature) presented a talk on how to use Github. Chloë (@BooteCG), as a way to use his instruction tried to make an .md with the notes/instructions in and posted to her github [here](https://github.com/BooteCG/Using-Git-theBasics)
+
+- 2 Dec 2019. Pete (@PeteCowman) presented a talk on using tidyverse to manipulate your data. To view Pete's materials on tidyverse see [here](https://github.com/PeteCowman/tidyverse_demo). 
