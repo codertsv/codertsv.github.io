@@ -11,3 +11,5 @@ Our website is [codertsv.github.io](https://codertsv.github.io)
 - 25 Nov 2019. Cesar (@CexyNature) presented a talk on how to use Github. Chloë (@BooteCG), as a way to use his instruction tried to make an .md with the notes/instructions in and posted to her github [here](https://github.com/BooteCG/Using-Git-theBasics)
 
 - 2 Dec 2019. Pete (@PeteCowman) presented a talk on using tidyverse to manipulate your data. To view Pete's materials on tidyverse see [here](https://github.com/PeteCowman/tidyverse_demo). 
+
+- 16 Dec 2019. Wytamma (@wytamma) presented a talk on Python basics 🐍. We used [Google colab](https://colab.research.google.com/notebooks/basic_features_overview.ipynb) to write and run some Python.
