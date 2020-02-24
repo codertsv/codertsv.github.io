@@ -14,4 +14,4 @@ Our website is [codertsv.github.io](https://codertsv.github.io)
 
 - 16 Dec 2019. Wytamma (@wytamma) presented a talk on Python basics 🐍. We used [Google colab](https://colab.research.google.com/notebooks/basic_features_overview.ipynb) to write and run some Python.
 
-- 24 Feb 2020. Anything goes session on **loops**. (Link to examples)[https://codertsv.github.io/loops].
+- 24 Feb 2020. Anything goes session on **loops**. [Link to examples](https://codertsv.github.io/loops).
