@@ -28,7 +28,7 @@ Here’s a [link](https://gist.github.com/Wytamma/18b76543857b328d4fa25ca3772527
 ## Bash 
 Chloë presented a loop where she uses [trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) to trim her read adapters from her multiple fasta files.
 
-```
+```bash
 for i in *_R1.fastq.gz #any file that ends with 
 do
 filename=`echo $i|cut -c 1-3` #for output use a substring to just cut first 3 characters
