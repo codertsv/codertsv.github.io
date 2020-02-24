@@ -44,3 +44,162 @@ echo "Trimming reads like a baller" #because
 
 Bash uses 'do' and 'done' like R uses parentheses {} and python uses white space :)
 If you want to try a bash loop there's a tutorial [here](https://linuxize.com/post/bash-for-loop/).
+
+## R
+
+Legana suggested [Chapter 21: Iterations](https://r4ds.had.co.nz/iteration.html) from **R for Data Science** book by Garrett Grolemund and Hadley Wickham. This open ebook contains very good information about the use of R from a *tidyverse* philosophy.
+
+
+César presented some dummy examples using `for loops` in R. The aim from this first dummy example was to demonstrate `R` loops syntax. In this case, given a vector `x` we wanted to multiply each element by 5, and replace each element with the result from this operation.
+
+```r {}
+x <- seq(1, 10, 1)
+x
+
+## Multiply each elemnt in a vector
+x*5
+
+for (i in seq_along(x)){
+  x[i] <- x[i]*5
+  print(x[i])
+}
+```
+
+We also discussed `for loops` styles. Thus, options one and two from example below are preferred over option three. You can explore different outputs in each option when using a null vector (e.g . `x <- NULL`)
+
+```r {}
+x <- seq(1, 10, 1)
+
+# Option one
+for (i in x){
+  print(x[i]*5)
+}
+
+# Option two
+for (i in seq_along(x)){
+  print(x[i]*5)
+}
+
+# Option three
+for (i in 1:length(x)){
+  print(x[i]*5)
+}
+```
+
+We created a simple control flow statement using `if`, `else if`, and `else` statements inside a `for loop`. Thus, this control flow statement tell us for each element in `x` if its modulo is zero when divided by 2 or 3.
+
+```r {}
+x <- seq(1, 10, 1)
+for (i in seq_along(x)){
+  y <- x[i] * 5
+  if (y %% 2 == 0){
+    print(paste(y, " is an even number because modulo is zero when divided by 2"))
+  }
+  else if (y %% 3 == 0){
+    print(paste(y, " modulo is zero when divided by 3, "))
+  }
+  else {
+    print(paste(y, " is an odd number becasue modulo is not zero"))
+  }
+}
+```
+
+We discussed removing *dummy variables* created by `for loops` (e.g. `i`, `x` and `y` below), and using the garbage collectors `gc` to emptied memory after large calculations.
+
+```r {}
+x <- seq(1, 10, 1)
+x
+for (i in seq_along(x)){
+  y <- x[i] * 5
+  z <- sqrt(y) + 1000/3
+  x[i] <- z
+  rm(list = c('y', 'z', 'i'))
+  gc()
+}
+x
+```
+
+César presented an example to list all files inside a directory, and open them in the R environment (step 1). Then, these files can be merged in a list of data frames (step 2). This list of data frames can be combined into one big data frame using `for loop` or inbuilt R package functions (step 3). Thus, we discussed the use of `for loops` and inbuilt vectorized operations in R packages.
+
+```r {}
+# Step 1
+library(here)
+here::here()
+
+## Gather all file names contained inside folder 'data_raw' in a list
+file.names <- list.files('dat_raw', pattern = "*.csv", full.names = TRUE)
+file.names
+
+## Take each file name, read it and save it in the environment.
+### gc = garbage collection takes place. Useful when reading large objects and returning memory to OS
+for (i in 1:length(file.names)){
+  # Split and atomize 'file.names' list, returning only each file name with extension at each iteration
+  start.stripped.i <- unlist(strsplit(x = file.names[i], split = 'dat_raw/'))[2]
+  # Return only file name without file extension
+  obj.name.i <- unlist(strsplit(x = start.stripped.i, split = '\\.'))[1] # escape character before. so it's not treated as a wildcard
+  # Read each file into environment
+  X.i <- read.csv(file.names[i], skip=4, header = TRUE, colClasses = c("numeric","character", "numeric", 'character', 
+                                                                       'numeric', 'numeric', 'numeric', 'numeric',
+                                                                       "character", "character", "character", "numeric",
+                                                                       "numeric", "numeric", "character"))
+  # Assign the new object in the environment to its file name
+  assign(x = obj.name.i, value = X.i)
+  rm(list = c('start.stripped.i', 'obj.name.i', 'X.i', 'i'))
+  gc()
+}
+
+
+# Step 2
+## Create empty list and add all files contained in folder 'tracks'
+my_list <- list()
+for (i in 1:length(file.names)){
+  start.stripped.i <- unlist(strsplit(x = file.names[i], split = 'dat_raw/'))[2]
+  # print(start.stripped.i)
+  obj.name.i <- unlist(strsplit(x = start.stripped.i, split = '\\.'))[1]
+  print(obj.name.i)
+  my_list[[obj.name.i]] <- get(obj.name.i)
+  #obj.name.i[,2] <- gsub('[()]', '', obj.name.i[,2])
+  #obj.name.i <- separate(obj.name.i, Crab_Position, into = c('x_coord', 'y_coord'), sep = ',')
+  rm(list = c('start.stripped.i', 'obj.name.i', 'i', obj.name.i))
+  gc()
+}
+length(my_list)
+
+# Step 3
+library(plyr)
+# Create a dataframe from list
+tracks <- ldply(my_list, data.frame)
+``` 
+
+We also went through César example of using a `for loop` to produce several plots using `ggplot2`.
+
+```r {}
+# Example: Plotting using for loops
+library(here)
+here::here()
+
+load(file = here::here("dat_clean", "dat.insect_w_scores.Rdata"))
+load(file = here::here("dat_clean", "dat.sp_insect_scores.Rdata"))
+load(file = here::here("dat_clean", "insects.Rdata"))
+
+library(ggplot2)
+insects # a vector containing all insects names in other data sets
+
+## Iterate by each element in insects and plot
+for (i in insects){
+  gnmds <- ggplot() +
+    geom_point(data = data.withscores, aes_string(x="NMDS1", y="NMDS2", color = "Species", size=i)) +
+    # geom_text(data = data.withscores, aes(x=NMDS1, y=NMDS2, label = Seasons), hjust =0, nudge_x = 0.05, size=2.5) +
+    theme(legend.position = "right",
+          axis.title = element_blank(),
+          axis.text = element_blank(),
+          axis.ticks = element_blank(),
+          panel.grid = element_blank(),
+          panel.border = element_rect(size = 2, fill = NA),
+          panel.background = element_blank())
+  
+  print(gnmds)
+  ggsave(here::here("results", paste(i, "_nmds_bubbles.jpeg")), width = 25, height = 12, units = 'cm', dpi = 300)
+  Sys.sleep(1)
+}
+```
