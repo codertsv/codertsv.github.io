@@ -52,7 +52,7 @@ Legana suggested [Chapter 21: Iterations](https://r4ds.had.co.nz/iteration.html)
 
 César presented some dummy examples using `for loops` in R. The aim from this first dummy example was to demonstrate `R` loops syntax. In this case, given a vector `x` we wanted to multiply each element by 5, and replace each element with the result from this operation.
 
-```r {}
+```r
 x <- seq(1, 10, 1)
 x
 
@@ -67,7 +67,7 @@ for (i in seq_along(x)){
 
 We also discussed `for loops` styles. Thus, options one and two from example below are preferred over option three. You can explore different outputs in each option when using a null vector (e.g . `x <- NULL`)
 
-```r {}
+```r
 x <- seq(1, 10, 1)
 
 # Option one
@@ -88,7 +88,7 @@ for (i in 1:length(x)){
 
 We created a simple control flow statement using `if`, `else if`, and `else` statements inside a `for loop`. Thus, this control flow statement tell us for each element in `x` if its modulo is zero when divided by 2 or 3.
 
-```r {}
+```r
 x <- seq(1, 10, 1)
 for (i in seq_along(x)){
   y <- x[i] * 5
@@ -106,7 +106,7 @@ for (i in seq_along(x)){
 
 We discussed removing *dummy variables* created by `for loops` (e.g. `i`, `x` and `y` below), and using the garbage collectors `gc` to emptied memory after large calculations.
 
-```r {}
+```r
 x <- seq(1, 10, 1)
 x
 for (i in seq_along(x)){
@@ -121,7 +121,7 @@ x
 
 César presented an example to list all files inside a directory, and open them in the R environment (step 1). Then, these files can be merged in a list of data frames (step 2). This list of data frames can be combined into one big data frame using `for loop` or inbuilt R package functions (step 3). Thus, we discussed the use of `for loops` and inbuilt vectorized operations in R packages.
 
-```r {}
+```r
 # Step 1
 library(here)
 here::here()
@@ -173,7 +173,7 @@ tracks <- ldply(my_list, data.frame)
 
 We also went through César example of using a `for loop` to produce several plots using `ggplot2`.
 
-```r {}
+```r
 # Example: Plotting using for loops
 library(here)
 here::here()
