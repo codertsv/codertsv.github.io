@@ -6,7 +6,7 @@ Our website is [codertsv.github.io](https://codertsv.github.io)
 
 ### Past presentations
 
-- 20 Apr 2020. Linsay (@lindsaymarkward) presented a talk via Zoom on clean code best practices with examples in Python
+- 20 Apr 2020. Linsay (@lindsaymarkward) presented a talk via Zoom on clean code best practices with examples in Python. Link to recording: https://jcu.zoom.us/rec/share/2cl_JqjN3z1JZY3zzHOAYIUGR6riaaa803QWrvcFykkmKbn0t4Tmfb0OHwczcVpu Password: 4S=k@T$H
 
 - 24 Feb 2020. Anything goes session on **loops**. [Link to examples](https://codertsv.github.io/loops).
 
