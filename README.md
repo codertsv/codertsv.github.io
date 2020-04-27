@@ -6,6 +6,8 @@ Our website is [codertsv.github.io](https://codertsv.github.io)
 
 ### Past presentations
 
+- 20 Apr 2020. Linsay (@lindsaymarkward) presented a talk via Zoom on clean code best practices with examples in Python
+
 - 24 Feb 2020. Anything goes session on **loops**. [Link to examples](https://codertsv.github.io/loops).
 
 - 16 Dec 2019. Wytamma (@wytamma) presented a talk on Python basics 🐍. We used [Google colab](https://colab.research.google.com/notebooks/basic_features_overview.ipynb) to write and run some Python.
