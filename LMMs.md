@@ -1,0 +1,32 @@
+# Linear Mixed Effects Models Notes
+
+## Random effects vs Fixed effects
+
+I think an argument can be said about prediction vs. forecasting for new data. If your goal is perfect prediction of your current dataset and you are not worried about being accurate outside of your sample, by all means, it is fine to include as many fixed effects as you'd like. However, increasing the number of fixed effects will invariably lead to model overfitting, which will reduce your so-called out-of-sample or out-of-bag accuracy, whereas the inclusion of more random effect levels do not. So definitely a trade-off to over-parameterizing with fixed effects. **(Kevin)** -> [https://www.youtube.com/watch?v=0Jc6Kgw5qc0](https://www.youtube.com/watch?v=0Jc6Kgw5qc0)
+
+it helps to think of fixed effects as something that is affecting your response, whereas, a random effect is accounting for their influence but not telling you how they affect the response. Random effects = accounting for intraspecific variation/ avoid pseudoreplication. Fixed effects = Gives you the relationship via the slope. **(Rishab)**
+
+My original point is that there are many aspect to consider when deciding your statistical model. Thus, when selecting if a factor is Random or Fixed, and actually for any experimentation, sampling, and modelling matter, I think is important to consider three aspect: (1) our philosophical approach to the problem, this is, our understanding of the system based in our domain knowledge; (2) the logic approach to the experiment and sampling, this is, acknowledging assumptions and limitations in our data, and other sources of uncertainty; (3) the statistical implementation and interpretation of our analysis. In my personal application of this thought structure, questions I ask myself across these three aspects follow a tree (pyramidal) shape, few questions at the beginning and more towards the end. However, the importance or weight of these questions is  considerable higher in (1) and (2) than in (3). For instance:
+
+1. What specific question we want to answer? and Why (what is the intention)?
+
+2. Which is the response variable? Which variables we expect to change the response variable effect (i.e. mean differences), and which variables we expect to change the response variable variability (i.e variance, introduce noise). Are all these variables independent? Have we exhausted all possible levels these variables can take in our experiment? Do our samples represent the entire population of interest, or is there a mismatch?
+
+3. Which assumptions were taken in our sampling/experiment? Do these assumptions are required to be explicitly include in our analysis? What kind of statistical tool can we use based in the above answers? Do we know distributions for all variables? Do data meet statistical assumptions? Should data be scaled? How we would deal with zeros, Null, and missing data? What statistical thresholds (or probabilities) would you consider acceptable (alpha, beta, Power)? How much would you tortured the data, would you impose limits? How would you measure fit?
+
+This sounds silly, but I think is really important. Often, I have found we are good at (3) but unexpectedly we forget about (1) and (2). I think, this type of thought process can be employed in any statistical paradigm (frequentist, bayesian, likelihood, etc). Most statistical pitfalls are not related to code (arguably, 3) but to aspects (1) and (2). **(Cesar)**
+
+## Model outputs
+
+Model outputs can be misleading, as they compare everything to the first element alphabetically. To account for that:
+
+```r
+Anova(model.name)
+```
+Or alternatively, to show the p-value in relation to an F-test.
+```r
+Anova(model.name, test.statistic = "F") 
+```
+**(Eric)**
+
+Adding onto this, the a repository that Cesar shared on the slack group can also help with tidying model outputs, as well as a number of other things. It includes the [_Janitor_](https://github.com/allisonhorst/stats-illustrations/blob/master/README.md) package also mentioned during the meeting by Peter. (**Cesar, Peter**).
