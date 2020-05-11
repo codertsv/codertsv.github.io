@@ -6,7 +6,7 @@ Our website is [codertsv.github.io](https://codertsv.github.io)
 
 ### Past presentations
 
-- 11 May 2020. Ira summarised the key ideas on random vs fixed effects from the previous meeting, and Sonja walked us through her modelling and model selection approach when modelling fetal renal parenchymal thickness during pregnancy. A rough summary of key concepts and ideas can be found [here] (https://codertsv.github.io/LMMs_pt2)
+- 11 May 2020. Ira (@iracooke) summarised the key ideas on random vs fixed effects from the previous meeting, and Sonja walked us through her modelling and model selection approach when modelling fetal renal parenchymal thickness during pregnancy. A rough summary of key concepts and ideas can be found [here](https://codertsv.github.io/LMMs_pt2)
 
 - 27 Apr 2020. Chloë (@CGBoote) lead us through a tutorial on [linear mixed models in R](https://ourcodingclub.github.io/tutorials/mixed-models/). Lorenzo (@ItsFrogday) has summarised the discussion that followed [here](https://codertsv.github.io/LMMs).
 
@@ -20,4 +20,4 @@ Our website is [codertsv.github.io](https://codertsv.github.io)
 
 - 25 Nov 2019. Cesar (@CexyNature) presented a talk on how to use Github. Chloë (@BooteCG), as a way to use his instruction tried to make an .md with the notes/instructions in and posted to her github [here](https://github.com/BooteCG/Using-Git-theBasics)
 
-- 18 Nov 2019.  Ira Cooke presented an intro to RMarkdown. The rendered presentation can be viewed on [RPubs](http://rpubs.com/iracooke/rmarkdown_intro) and source code is on github at [https://github.com/iracooke/rmarkdown_intro](https://github.com/iracooke/rmarkdown_intro)
+- 18 Nov 2019.  Ira (@iracooke) presented an intro to RMarkdown. The rendered presentation can be viewed on [RPubs](http://rpubs.com/iracooke/rmarkdown_intro) and source code is on github at [https://github.com/iracooke/rmarkdown_intro](https://github.com/iracooke/rmarkdown_intro)
