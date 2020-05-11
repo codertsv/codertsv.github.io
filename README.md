@@ -6,7 +6,7 @@ Our website is [codertsv.github.io](https://codertsv.github.io)
 
 ### Past presentations
 
-- 20 Apr 2020. Chloë (@CGBoote) lead us through a tutorial on [linear mixed models in R](https://ourcodingclub.github.io/tutorials/mixed-models/). Lorenzo (@ItsFrogday) has summarised the discussion that followed [here](https://codertsv.github.io/LMMs).
+- 27 Apr 2020. Chloë (@CGBoote) lead us through a tutorial on [linear mixed models in R](https://ourcodingclub.github.io/tutorials/mixed-models/). Lorenzo (@ItsFrogday) has summarised the discussion that followed [here](https://codertsv.github.io/LMMs).
 
 - 20 Apr 2020. Lindsay (@lindsaymarkward) presented a talk via Zoom on clean code best practices with examples in Python. [Link to recording](https://jcu.zoom.us/rec/share/2cl_JqjN3z1JZY3zzHOAYIUGR6riaaa803QWrvcFykkmKbn0t4Tmfb0OHwczcVpu) and password: 4S=k@T$H
 
