@@ -6,6 +6,8 @@ Our website is [codertsv.github.io](https://codertsv.github.io)
 
 ### Past presentations
 
+- 18 May 2020. Joseph M. introduced the issues around Data storage and reproducibility. Started a conversation on producing guidelines and templates for reproducible research. [Summary notes](https://codertsv.github.io/Meeting_20200518_DataStorage)
+
 - 11 May 2020. Ira (@iracooke) summarised the key ideas on random vs fixed effects from the previous meeting, and Sonja walked us through her modelling and model selection approach when modelling fetal renal parenchymal thickness during pregnancy. A rough summary of key concepts and ideas can be found [here](https://codertsv.github.io/LMMs_pt2)
 
 - 27 Apr 2020. Chloë (@CGBoote) lead us through a tutorial on [linear mixed models in R](https://ourcodingclub.github.io/tutorials/mixed-models/). Lorenzo (@ItsFrogday) has summarised the discussion that followed [here](https://codertsv.github.io/LMMs).
