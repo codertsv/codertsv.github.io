@@ -13,7 +13,7 @@ and other JCU coworkers, and didn't find complete data, non-available code, misl
 files, etc. 
 
 **Wytamma W.**: Github would be a great place to have private repositories where to share 
-code and comment on each others scripts
+code and comment on each others scripts. [Docker](https://www.docker.com/) is a useful tool for producing reproducible environments.
 
 ## Where to from here?
 
