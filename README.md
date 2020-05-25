@@ -5,6 +5,7 @@ We meet every Monday at 11am for an hour to discuss all things R
 Our website is [codertsv.github.io](https://codertsv.github.io)
 
 ### Past presentations
+- 25 May 2020. Pete (@pete_cowman) gives an intro and demo to plotting phylogenetic trees in R with the package ggtree. After intro he has fun plotting a phylogeny of butterflyfishes. To view Pete's materials on tidyverse see [here](https://github.com/PeteCowman/ggtree_demo).
 
 - 18 May 2020. Joseph M. introduced the issues around Data storage and reproducibility. Started a conversation on producing guidelines and templates for reproducible research. [Summary notes](https://codertsv.github.io/Meeting_20200518_DataStorage)
 
