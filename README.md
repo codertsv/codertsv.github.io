@@ -5,6 +5,10 @@ We meet every Monday at 11am for an hour to discuss all things R. You can find a
 Our website is [codertsv.github.io](https://codertsv.github.io)
 
 ### Past presentations
+- 15 June 2020. Ira (@iracooke) took us through some best practices for writing performant R and how to use a profiler to optimise code. Ira's notes can be found in this [repo](https://github.com/iracooke/coder-fastr).
+
+- 8 June 2020. Kevin Bairos-Novak (@ecolology) gave an intro to build Shiny apps in R. Kevin's note can be found in this [repo](https://github.com/codertsv/rshiny_covid_app).
+
 - 25 May 2020. Pete (@pete_cowman) gives an intro and demo to plotting phylogenetic trees in R with the package ggtree. After intro he has fun plotting a phylogeny of butterflyfishes. To view Pete's materials on tidyverse see [here](https://github.com/PeteCowman/ggtree_demo).
 
 - 18 May 2020. Joseph M. introduced the issues around Data storage and reproducibility. Started a conversation on producing guidelines and templates for reproducible research. [Summary notes](https://codertsv.github.io/Meeting_20200518_DataStorage)
