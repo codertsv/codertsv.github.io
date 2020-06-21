@@ -1,3 +1,10 @@
+---
+layout: posts
+title:  "Linear Mixed Effects Models pt2"
+date:   2020-05-11 11:00:00 +1000
+categories: jekyll update
+---
+
 ## LINEAR MIXED EFFECT MODELS
 
 **Disclaimer**: I wrote down these notes while trying to keep up with the conversation being had. They might not be 100% accurate. So please use them as a general guide to remember what we discussed, and figure out where to look for further, detailed, and accurate information of the topic of interest to you.
@@ -56,4 +63,3 @@ Link for further reading: https://rpubs.com/DKCH2020/578881
 
 Conversation on stack exchange (although a bit old, might not be considering updates):
 https://stats.stackexchange.com/questions/5344/how-to-choose-nlme-or-lme4-r-library-for-mixed-effects-models
-

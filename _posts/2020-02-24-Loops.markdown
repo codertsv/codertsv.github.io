@@ -1,3 +1,9 @@
+---
+layout: posts
+title:  "Loops"
+date:   2020-02-24 11:00:00 +1000
+categories: jekyll update
+---
 # Anything Goes: Loops
 *Examples from our 'anything goes' loop session on 24th of Feb 2020*
 
