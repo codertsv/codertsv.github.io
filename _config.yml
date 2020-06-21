@@ -36,6 +36,16 @@ plugins:
 # this and add the path to the pages in order as they should show up
 header_pages:
  - meetings.markdown
+ 
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
