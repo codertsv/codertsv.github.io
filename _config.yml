@@ -28,7 +28,7 @@ twitter_username: CodeR-TSV
 github_username:  codertsv
 
 # Build settings
-theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
 plugins:
   - jekyll-feed
 
