@@ -1,4 +1,9 @@
-# Linear Mixed Effects Models Notes
+---
+layout: posts
+title:  "Linear Mixed Effects Models"
+date:   2020-05-4 11:00:00 +1000
+categories: jekyll update
+---
 
 ## Random effects vs Fixed effects
 

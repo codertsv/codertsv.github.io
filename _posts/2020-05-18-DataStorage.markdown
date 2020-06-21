@@ -1,4 +1,9 @@
-Weekly Meeting - 18th of May 2020
+---
+layout: posts
+title:  "On data storage and reproducible analyses"
+date:   2020-05-18 11:00:00 +1000
+categories: jekyll update
+---
 
 # Data storage and R templates for research analyses
 
