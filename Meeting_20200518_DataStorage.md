@@ -33,7 +33,7 @@ needs and challenges (e.g., Population genomics/Phylogenomics; Medical trials; e
 ## Examples of reproducible data and useful resources
 
 **Legana F.**: Just published a paper, and has script to reproduce everything that was 
-done on [github](https://github.com/Legana/AMP_pub) for her [publication](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.5012)
+done on [github](https://github.com/Legana/AMP_pub) for her [publication](https://academic.oup.com/bioinformatics/article-abstract/doi/10.1093/bioinformatics/btaa653/5873588)
 
 **Cesar H.**: _[Ten simple solutions](https://journals.plos.org/ploscompbiol/article/related?id=10.1371/journal.pcbi.1005097) for Digital data storage_ 
 
