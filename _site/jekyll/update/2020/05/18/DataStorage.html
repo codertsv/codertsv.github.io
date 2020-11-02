@@ -1,0 +1,365 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>On data storage and reproducible analyses - codeR Townsville</title>
+<meta name="description" content="Data storage and R templates for research analyses ">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="codeR Townsville">
+<meta property="og:title" content="On data storage and reproducible analyses">
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2020/05/18/DataStorage.html">
+
+
+  <meta property="og:description" content="Data storage and R templates for research analyses ">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-05-18T11:00:00+10:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2020/05/18/DataStorage.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="codeR Townsville Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--posts">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          codeR Townsville
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/meetings/">Meetings</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="archive">
+    
+      <h1 id="page-title" class="page__title">On data storage and reproducible analyses</h1>
+    
+    <h1 id="data-storage-and-r-templates-for-research-analyses">Data storage and R templates for research analyses</h1>
+
+<p>Joseph Moxon presented his take on how to use R for data storage best practices,
+and started a conversation on producing R templates for research analyses.</p>
+
+<p><strong>Ira C.</strong>: data often too large to be stored on the same location as the scripts.</p>
+
+<p><strong>Cesar H.</strong>: in the process of submitting data. Trying to find good example of metadata
+in the Tropical Data Hub, and couldn’t find a good example. Looked at papers from his team
+and other JCU coworkers, and didn’t find complete data, non-available code, mislabelled 
+files, etc.</p>
+
+<p><strong>Wytamma W.</strong>: Github would be a great place to have private repositories where to share 
+code and comment on each others scripts</p>
+
+<h2 id="where-to-from-here">Where to from here?</h2>
+
+<p><strong>Ira C.</strong>: It would be good to, as Joseph suggested, subdivide into disciplines and 
+produce guidelines. These could include: where to store the data used; things that <em>have</em> to
+be included in the script, etc.</p>
+
+<p><strong>Joseph M.</strong>: It would be good to <strong>identify key areas</strong> that will likely share similar 
+needs and challenges (e.g., Population genomics/Phylogenomics; Medical trials; etc.)</p>
+
+<h3 id="expressions-of-interest">Expressions of interest</h3>
+
+<p><strong>Peter C</strong>: keen to help produce guidelines for pop gen/genomic data</p>
+
+<p><strong>Lorenzo B</strong>: keen to help produce guidelines for pop gen/genomic data</p>
+
+<h2 id="examples-of-reproducible-data-and-useful-resources">Examples of reproducible data and useful resources</h2>
+
+<p><strong>Legana F.</strong>: Just published a paper, and has script to reproduce everything that was 
+done on <a href="https://github.com/Legana/AMP_pub">github</a> for her <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.5012">publication</a></p>
+
+<p><strong>Cesar H.</strong>: <em><a href="https://journals.plos.org/ploscompbiol/article/related?id=10.1371/journal.pcbi.1005097">Ten simple solutions</a> for Digital data storage</em></p>
+
+<p><strong>Cesar H.</strong>: Shared his <a href="https://www.biorxiv.org/content/10.1101/2020.05.11.085803v1.full">paper</a> that will have code available once peer-reviewed</p>
+
+<p><strong>Lorenzo B.</strong>: <em>Good example of pop gen data availability and reproducibility</em> <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.5012">here</a>, see 
+supplementary information.</p>
+
+<h2 id="coding-challenges-with-rosalind">Coding challenges with <strong>Rosalind</strong></h2>
+
+<p>Ira suggested starting an appended session (15 min on top of the usual 11 am to midday), to
+ go over 1-2 rosalind coding problems. Everyone seemed to agree. Peter C. will start a slack 
+ channel for it.</p>
+
+<p>Find the website <a href="http://rosalind.info/problems/locations/">here</a></p>
+
+
+<ul class="taxonomy__index">
+  
+  
+    <li>
+      <a href="#2020">
+        <strong>2020</strong> <span class="taxonomy__count">5</span>
+      </a>
+    </li>
+  
+</ul>
+
+
+
+  <section id="2020" class="taxonomy__section">
+    <h2 class="archive__subtitle">2020</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/jekyll/update/2020/06/01/PastMeetings.html" rel="permalink">Useful links from past meetings
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Townsville R coders club
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/jekyll/update/2020/05/18/DataStorage.html" rel="permalink">On data storage and reproducible analyses
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Data storage and R templates for research analyses
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/jekyll/update/2020/05/11/LMMs-pt2.html" rel="permalink">Linear Mixed Effects Models pt2
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">LINEAR MIXED EFFECT MODELS
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/jekyll/update/2020/05/04/LMMs.html" rel="permalink">Linear Mixed Effects Models
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Random effects vs Fixed effects
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/jekyll/update/2020/02/24/Loops.html" rel="permalink">Loops
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Anything Goes: Loops
+Examples from our ‘anything goes’ loop session on 24th of Feb 2020
+</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+
+  </div>
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 codeR Townsville. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

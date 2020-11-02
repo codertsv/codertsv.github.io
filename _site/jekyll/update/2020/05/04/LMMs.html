@@ -1,0 +1,350 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Linear Mixed Effects Models - codeR Townsville</title>
+<meta name="description" content="Random effects vs Fixed effects ">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="codeR Townsville">
+<meta property="og:title" content="Linear Mixed Effects Models">
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2020/05/04/LMMs.html">
+
+
+  <meta property="og:description" content="Random effects vs Fixed effects ">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-05-04T11:00:00+10:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2020/05/04/LMMs.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="codeR Townsville Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--posts">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          codeR Townsville
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/meetings/">Meetings</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="archive">
+    
+      <h1 id="page-title" class="page__title">Linear Mixed Effects Models</h1>
+    
+    <h2 id="random-effects-vs-fixed-effects">Random effects vs Fixed effects</h2>
+
+<p>I think an argument can be said about prediction vs. forecasting for new data. If your goal is perfect prediction of your current dataset and you are not worried about being accurate outside of your sample, by all means, it is fine to include as many fixed effects as you’d like. However, increasing the number of fixed effects will invariably lead to model overfitting, which will reduce your so-called out-of-sample or out-of-bag accuracy, whereas the inclusion of more random effect levels do not. So definitely a trade-off to over-parameterizing with fixed effects. <strong>(Kevin)</strong> -&gt; <a href="https://www.youtube.com/watch?v=0Jc6Kgw5qc0">https://www.youtube.com/watch?v=0Jc6Kgw5qc0</a></p>
+
+<p>it helps to think of fixed effects as something that is affecting your response, whereas, a random effect is accounting for their influence but not telling you how they affect the response. Random effects = accounting for intraspecific variation/ avoid pseudoreplication. Fixed effects = Gives you the relationship via the slope. <strong>(Rishab)</strong></p>
+
+<p>My original point is that there are many aspect to consider when deciding your statistical model. Thus, when selecting if a factor is Random or Fixed, and actually for any experimentation, sampling, and modelling matter, I think is important to consider three aspect: (1) our philosophical approach to the problem, this is, our understanding of the system based in our domain knowledge; (2) the logic approach to the experiment and sampling, this is, acknowledging assumptions and limitations in our data, and other sources of uncertainty; (3) the statistical implementation and interpretation of our analysis. In my personal application of this thought structure, questions I ask myself across these three aspects follow a tree (pyramidal) shape, few questions at the beginning and more towards the end. However, the importance or weight of these questions is  considerable higher in (1) and (2) than in (3). For instance:</p>
+
+<ol>
+  <li>
+    <p>What specific question we want to answer? and Why (what is the intention)?</p>
+  </li>
+  <li>
+    <p>Which is the response variable? Which variables we expect to change the response variable effect (i.e. mean differences), and which variables we expect to change the response variable variability (i.e variance, introduce noise). Are all these variables independent? Have we exhausted all possible levels these variables can take in our experiment? Do our samples represent the entire population of interest, or is there a mismatch?</p>
+  </li>
+  <li>
+    <p>Which assumptions were taken in our sampling/experiment? Do these assumptions are required to be explicitly include in our analysis? What kind of statistical tool can we use based in the above answers? Do we know distributions for all variables? Do data meet statistical assumptions? Should data be scaled? How we would deal with zeros, Null, and missing data? What statistical thresholds (or probabilities) would you consider acceptable (alpha, beta, Power)? How much would you tortured the data, would you impose limits? How would you measure fit?</p>
+  </li>
+</ol>
+
+<p>This sounds silly, but I think is really important. Often, I have found we are good at (3) but unexpectedly we forget about (1) and (2). I think, this type of thought process can be employed in any statistical paradigm (frequentist, bayesian, likelihood, etc). Most statistical pitfalls are not related to code (arguably, 3) but to aspects (1) and (2). <strong>(Cesar)</strong></p>
+
+<h2 id="model-outputs">Model outputs</h2>
+
+<p>Model outputs can be misleading, as they compare everything to the first element alphabetically. To account for that:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Anova</span><span class="p">(</span><span class="n">model.name</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+<p>Or alternatively, to show the p-value in relation to an F-test.</p>
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Anova</span><span class="p">(</span><span class="n">model.name</span><span class="p">,</span><span class="w"> </span><span class="n">test.statistic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"F"</span><span class="p">)</span><span class="w"> 
+</span></code></pre></div></div>
+<p><strong>(Eric)</strong></p>
+
+<p>Adding onto this, the a repository that Cesar shared on the slack group can also help with tidying model outputs, as well as a number of other things. It includes the <a href="https://github.com/allisonhorst/stats-illustrations/blob/master/README.md"><em>Janitor</em></a> package also mentioned during the meeting by Peter. (<strong>Cesar, Peter</strong>).</p>
+
+
+<ul class="taxonomy__index">
+  
+  
+    <li>
+      <a href="#2020">
+        <strong>2020</strong> <span class="taxonomy__count">5</span>
+      </a>
+    </li>
+  
+</ul>
+
+
+
+  <section id="2020" class="taxonomy__section">
+    <h2 class="archive__subtitle">2020</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/jekyll/update/2020/06/01/PastMeetings.html" rel="permalink">Useful links from past meetings
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Townsville R coders club
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/jekyll/update/2020/05/18/DataStorage.html" rel="permalink">On data storage and reproducible analyses
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Data storage and R templates for research analyses
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/jekyll/update/2020/05/11/LMMs-pt2.html" rel="permalink">Linear Mixed Effects Models pt2
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">LINEAR MIXED EFFECT MODELS
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/jekyll/update/2020/05/04/LMMs.html" rel="permalink">Linear Mixed Effects Models
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Random effects vs Fixed effects
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/jekyll/update/2020/02/24/Loops.html" rel="permalink">Loops
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Anything Goes: Loops
+Examples from our ‘anything goes’ loop session on 24th of Feb 2020
+</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+
+  </div>
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 codeR Townsville. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
