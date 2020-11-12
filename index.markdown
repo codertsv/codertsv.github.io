@@ -5,6 +5,7 @@
 layout: home
 ---
 
+![Coder logo](assets/coder-hex3.png)
 
 Hello! Welcome to the the codeR community. We are mostly based within James Cook University in Townsville, but we welcome any member keen to contribute to our community.
 
