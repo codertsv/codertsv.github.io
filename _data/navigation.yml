@@ -1,11 +1,11 @@
 # main links
 main:
-  - title: "Meetings"
-    url: /meetings/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Past Presentations"
+    url: /past-presentations/
+  - title: "About"
+    url: /about/
+  - title: "Members"
+    url: /members/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"

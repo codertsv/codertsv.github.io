@@ -3,6 +3,7 @@ layout: posts
 title:  "Useful links from past meetings"
 date:   2020-06-01 11:00:00 +1000
 categories: jekyll update
+excerpt_separator: <!--more-->
 ---
 
 # Townsville R coders club
@@ -12,7 +13,7 @@ We meet every Monday at 11am for an hour to discuss all things R
 ### Selection of past presentations
 
 Please find below a selection from our weekly meetings where you can find links to some useful or interesting resources. A complete list of all our meetings can be found at the end of this page.
-
+<!--more-->
 - 12 October 2020. César (@CexyNature) did a presentation on Data Management. He described the importance of practicing good data management and he provided advice in what strategies to use to achieve data integration, data interoperability and data intelligibility. César's used his own data pipelines as an example. The slides of his talk can be found [here](https://cexynature.github.io/data_management/).
 
 - 20 July 2020. César (@CexyNature) made an introduction to Jupyter Notebooks and Jupyter Lab, and he showed us how we can use R in Jupyter as an alternative development environment. César reproduced R code from previous sessions (i.e. Pete's phylogenetic trees and Kevin's shiny app) within Jupyter, and the whole R developing environment can be found in [César's Intro to Jupyter repository](https://github.com/CexyNature/intro_jupyter) and the environment can be launched and used in [My Binder](https://mybinder.org/v2/gh/CexyNature/intro_jupyter/master).
