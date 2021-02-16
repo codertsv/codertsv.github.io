@@ -1,14 +1,32 @@
 ---
-layout: posts
 title:  "Linear Mixed Effects Models"
-date:   2020-05-4 11:00:00 +1000
-categories: jekyll update
+date:   2020-04-27 11:00:00 +1000
+excerpt_separator: <!--more-->
+categories:
+# - Meeting
+# - Presentation
+ - Tutorial
+ - Q&A
+# - Blog
+tags:
+ - R
+# - Git
+# - Python
+ - Statistics
+# - HPC
+# - Shiny
+# - Bash
+header:
+# image: assets/images/...
 ---
+
+Chloë (@CGBoote) lead us through a tutorial on [linear mixed models in R](https://ourcodingclub.github.io/tutorials/mixed-models/). Lorenzo (@ItsFrogday) has summarised the discussion that followed.
+
 
 ## Random effects vs Fixed effects
 
 I think an argument can be said about prediction vs. forecasting for new data. If your goal is perfect prediction of your current dataset and you are not worried about being accurate outside of your sample, by all means, it is fine to include as many fixed effects as you'd like. However, increasing the number of fixed effects will invariably lead to model overfitting, which will reduce your so-called out-of-sample or out-of-bag accuracy, whereas the inclusion of more random effect levels do not. So definitely a trade-off to over-parameterizing with fixed effects. **(Kevin)** -> [https://www.youtube.com/watch?v=0Jc6Kgw5qc0](https://www.youtube.com/watch?v=0Jc6Kgw5qc0)
-
+ <!--more-->
 it helps to think of fixed effects as something that is affecting your response, whereas, a random effect is accounting for their influence but not telling you how they affect the response. Random effects = accounting for intraspecific variation/ avoid pseudoreplication. Fixed effects = Gives you the relationship via the slope. **(Rishab)**
 
 My original point is that there are many aspect to consider when deciding your statistical model. Thus, when selecting if a factor is Random or Fixed, and actually for any experimentation, sampling, and modelling matter, I think is important to consider three aspect: (1) our philosophical approach to the problem, this is, our understanding of the system based in our domain knowledge; (2) the logic approach to the experiment and sampling, this is, acknowledging assumptions and limitations in our data, and other sources of uncertainty; (3) the statistical implementation and interpretation of our analysis. In my personal application of this thought structure, questions I ask myself across these three aspects follow a tree (pyramidal) shape, few questions at the beginning and more towards the end. However, the importance or weight of these questions is  considerable higher in (1) and (2) than in (3). For instance:
