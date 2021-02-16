@@ -10,6 +10,7 @@ categories:
 # - Blog
 tags:
  - Python
+ - Wytamma
 # - Statistics
 # - HPC
 # - Shiny

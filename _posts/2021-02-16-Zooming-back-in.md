@@ -1,6 +1,6 @@
 ---
 title:  "Zooming back in"
-date:   2019-04-30 14:26:17
+date:   2020-03-30 14:26:17
 excerpt_separator: <!--more-->
 categories:
  - Meeting
@@ -11,6 +11,7 @@ categories:
 tags:
 # - R
  - Python
+ - César
 # - Statistics
 # - HPC
 # - Shiny

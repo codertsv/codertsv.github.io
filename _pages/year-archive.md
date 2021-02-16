@@ -1,6 +1,7 @@
 ---
 title: "Past Presentations by Year"
-permalink: /past-presentations/
+permalink: /years/
 layout: posts
 author_profile: true
 ---
+Sort by [tag](/tags/)

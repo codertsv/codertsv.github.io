@@ -1,19 +1,31 @@
 ---
-layout: posts
 title:  "Linear Mixed Effects Models pt2"
 date:   2020-05-11 11:00:00 +1000
-categories: jekyll update
+excerpt_separator: <!--more-->
+categories:
+# - Meeting
+# - Presentation
+ - Tutorial
+ - Q&A
+# - Blog
+tags:
+ - R
+# - Git
+# - Python
+ - Statistics
+# - HPC
+# - Shiny
+# - Bash
+header:
+# image: assets/images/...
 ---
 
-## LINEAR MIXED EFFECT MODELS
-
-**Disclaimer**: I wrote down these notes while trying to keep up with the conversation being had. They might not be 100% accurate. So please use them as a general guide to remember what we discussed, and figure out where to look for further, detailed, and accurate information of the topic of interest to you.
-_Cheers, Lorenzo._
-
+Ira (@iracooke) summarised the key ideas on random vs fixed effects from the previous meeting, and Sonja walked us through her modelling and model selection approach when modelling fetal renal parenchymal thickness during pregnancy.
+<!--more-->
 #### RANDOM OR FIXED EFFECT
 
 Using the dragon example from this tutorial https://ourcodingclub.github.io/tutorials/mixed-models/, we started a discussion on the differences between random and mixed effects. See notes from previous meeting for more phylosophical interpretations/points of view. They can be found [here](https://codertsv.github.io/LMMs).
-
+ <!--more-->
 In general, putting your variable as a random instead of fixed effect has the advantage of 'saving' you degrees of freedom, by reducing the number of parameters that have to be estimated.
 
 In our case, this is making an assumption about the distribution of the estimated values across the mountain ranges, as each has its own mean and variance being estimated (" _each mountain range is its own unique snowflake_ ". Cooke, 2020). At this point you should ask yourself, is this actually the case?
@@ -63,3 +75,6 @@ Link for further reading: https://rpubs.com/DKCH2020/578881
 
 Conversation on stack exchange (although a bit old, might not be considering updates):
 https://stats.stackexchange.com/questions/5344/how-to-choose-nlme-or-lme4-r-library-for-mixed-effects-models
+
+**Disclaimer**: I wrote down these notes while trying to keep up with the conversation being had. They might not be 100% accurate. So please use them as a general guide to remember what we discussed, and figure out where to look for further, detailed, and accurate information of the topic of interest to you.
+_Cheers, Lorenzo._

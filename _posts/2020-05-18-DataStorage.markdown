@@ -1,9 +1,28 @@
 ---
-layout: posts
-title:  "On data storage and reproducible analyses"
+title:  "Data storage and reproducible analyses"
 date:   2020-05-18 11:00:00 +1000
-categories: jekyll update
+excerpt_separator: <!--more-->
+categories:
+ - Meeting
+# - Presentation
+# - Tutorial
+ - Q&A
+# - Blog
+tags:
+  - Data
+  - Reproducibility
+# - R
+# - Git
+# - Python
+# - Statistics
+# - HPC
+# - Shiny
+# - Bash
+header:
+# image: assets/images/...
 ---
+
+Joseph M. introduced the issues around Data storage and reproducibility. Started a conversation on producing guidelines and templates for reproducible research.
 
 # Data storage and R templates for research analyses
 
