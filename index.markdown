@@ -9,7 +9,7 @@ header:
   overlay_image: /assets/images/r.png
   actions:
     - label: "See past presentations"
-      url: "/past-presentations/"
+      url: "/tags/"
 excerpt: "A group of semi, somewhat, and diehard code-writing scientists who use R (and other languages) to solve a diverse set of problems in our respective fields."
 feature_row2:
   - image_path: /assets/images/mug.jpg
