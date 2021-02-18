@@ -1,8 +1,27 @@
 ---
-layout: posts
 title:  "Loops"
 date:   2020-02-24 11:00:00 +1000
-categories: jekyll update
+excerpt_separator: <!--more-->
+categories:
+ - Meeting
+# - Presentation
+ - Tutorial
+ - Q&A
+# - Blog
+tags:
+ - R
+ - Chloë
+ - Wytamma
+ - Legana
+ - César
+# - Git
+# - Python
+ - Statistics
+# - HPC
+# - Shiny
+# - Bash
+header:
+# image: assets/images/...
 ---
 # Anything Goes: Loops
 *Examples from our 'anything goes' loop session on 24th of Feb 2020*
