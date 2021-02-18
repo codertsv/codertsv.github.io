@@ -10,6 +10,7 @@ categories:
 # - Blog
 tags:
  - R
+ - Ira
 # - Git
 # - Python
  - Statistics
