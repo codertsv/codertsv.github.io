@@ -1,6 +1,7 @@
 ---
 title:  "Data frame manipulation with tidyr"
 date:   2021-02-22 15:39:12 +1000
+author: Kevin Bairos-Novak
 excerpt_separator: <!--more-->
 categories:
  - Meeting
