@@ -1,0 +1,29 @@
+# /_data/authors.yml
+
+Kevin Bairos-Novak:
+  name        : "Kevin Bairos-Novak"
+  bio         : "PhD candidate in Sean Connolly's lab"
+  avatar      : "https://avatars.githubusercontent.com/u/57380212?s=400&u=0b446ce13c62692eeb8f66424299e52edf95c2a3&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ecolology"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/ecolology"
+
+# example author
+Billy Rick:
+  name        : "Billy Rick"
+  bio         : "What do you want, jewels? I am a very extravagant man."
+  avatar      : "/assets/images/bio-photo-2.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:billyrick@rick.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://thewhip.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/extravagantman"
