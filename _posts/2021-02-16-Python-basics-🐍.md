@@ -1,6 +1,7 @@
 ---
 title:  "Python basics 🐍"
 date:   2019-12-16 14:08:15
+author: Wytamma
 excerpt_separator: <!--more-->
 categories:
  - Meeting

@@ -12,18 +12,17 @@ Kevin Bairos-Novak:
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/ecolology"
 
-# example author
-Billy Rick:
-  name        : "Billy Rick"
-  bio         : "What do you want, jewels? I am a very extravagant man."
-  avatar      : "/assets/images/bio-photo-2.jpg"
+Wytamma:
+  name        : "Wytamma Wirth"
+  bio         : "Enjoying the little things like antibodies, ion channels, and pip installs."
+  avatar      : "https://avatars.githubusercontent.com/u/13726005?s=460&u=1377cd4e696736ee8f597c4ba5cc5ffea725c729&v=4"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:billyrick@rick.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://thewhip.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/wytamma"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/extravagantman"
+      url: "https://twitter.com/wytamma"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://wytamma.com/"
