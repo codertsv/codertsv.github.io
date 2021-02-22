@@ -21,7 +21,7 @@ header:
 ---
 
 An alternative worklfow to Data frame Manipulation with tidyr
-Created by [César Herrera]()
+Created by [César Herrera](https://github.com/CexyNature/)
 
 tidyr use can be consulted at: https://swcarpentry.github.io/r-novice-gapminder/14-tidyr/index.html
 
