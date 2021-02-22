@@ -41,7 +41,7 @@ git push -u origin master
 
 Author information be found in the `/_data/authors.yml` data file. 
 
-To add an author copy the following test into that file replacing the appropriate variables.
+To add an author copy the following text into `authors.yml` replacing the appropriate variables.
 
 ```YAML
 Kevin Bairos-Novak:
