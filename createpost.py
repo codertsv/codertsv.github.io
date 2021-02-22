@@ -17,7 +17,7 @@ def main(agrs: list):
     content = [
         '---',
         f'title:  "{title}"',
-        f'date:   {d.strftime("%Y-%m-%d %H:%M:%S")}',
+        f'date:   {d.strftime("%Y-%m-%d %H:%M:%S")} +1000',
         'excerpt_separator: <!--more-->',
         'categories:',
         ' - Meeting',
