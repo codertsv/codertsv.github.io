@@ -23,7 +23,7 @@ header:
 An alternative worklfow to Data frame Manipulation with tidyr
 Created by [César Herrera](https://github.com/CexyNature/)
 
-tidyr use can be consulted at: https://swcarpentry.github.io/r-novice-gapminder/14-tidyr/index.html
+tidyr use can be consulted [here](https://swcarpentry.github.io/r-novice-gapminder/14-tidyr/index.html)
 
 Here, I present an alternative way to manipulate data frames, transform to wide to long and vice versa, using the package reshape2
 
