@@ -1,7 +1,9 @@
 members:
   - name: Stewart Macdonald
     github: stewartmacdonald
-
+  - name: Björn Illing
+    github: BjoernIlling
+    twitter: Bjoern_Illing
 organisers:
   - name: Ira Cooke
     github: iracooke
