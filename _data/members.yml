@@ -1,9 +1,20 @@
 members:
   - name: Stewart Macdonald
     github: stewartmacdonald
-  - name: Wytamma Wirth
-    github: wytamma
-    twitter: wytamma
+  - name: Björn Illing
+    github: BjoernIlling
+    twitter: Bjoern_Illing
+  - name: Jacob Westaway
+    github: JacobAFW
+    twitter: JacobWestaway
+  - name: Donald McKnight
+    github: donaldtmcknight
+    twitter: donaldmcknight2
+  - name: Magena Marzonie
+    github: magenamarzonie
+    twitter: MagenaMarzonie
+  - name: Makeely Blandford
+    github: makblandford
   - name: Stefano Montanari
     github: adrem1
 
@@ -24,7 +35,9 @@ organisers:
   - name: Natalia Andrade Rodriguez
   - name: Legana Fingerhut
     github: Legana
+    twitter: LeganaFingerhut
   - name: César Herrera
     github: CexyNature
   - name: Kevin Bairos-Novak
     github: ecolology
+    twitter: ecolology
