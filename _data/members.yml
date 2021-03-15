@@ -1,12 +1,17 @@
 members:
   - name: Stewart Macdonald
     github: stewartmacdonald
-  - name: Wytamma Wirth
-    github: wytamma
-    twitter: wytamma
   - name: Jacob Westaway
     github: JacobAFW
     twitter: JacobWestaway
+  - name: Donald McKnight
+    github: donaldtmcknight
+    twitter: donaldmcknight2
+  - name: Magena Marzonie
+    github: magenamarzonie
+    twitter: MagenaMarzonie
+  - name: Makeely Blandford
+    github: makblandford
 
 organisers:
   - name: Ira Cooke
