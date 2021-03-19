@@ -1,6 +1,25 @@
 members:
   - name: Stewart Macdonald
     github: stewartmacdonald
+  - name: Erika Gress
+    github: ErikaGress
+    twitter: ERika_GRess
+  - name: Björn Illing
+    github: BjoernIlling
+    twitter: Bjoern_Illing
+  - name: Jacob Westaway
+    github: JacobAFW
+    twitter: JacobWestaway
+  - name: Donald McKnight
+    github: donaldtmcknight
+    twitter: donaldmcknight2
+  - name: Magena Marzonie
+    github: magenamarzonie
+    twitter: MagenaMarzonie
+  - name: Makeely Blandford
+    github: makblandford
+  - name: Stefano Montanari
+    github: adrem1
 
 organisers:
   - name: Ira Cooke
@@ -15,10 +34,12 @@ organisers:
     github: wytamma
     twitter: wytamma
   - name: Jia Zhang
-    github: CexyNature
+    github: bakeronit
   - name: Natalia Andrade Rodriguez
+    github: China2302
   - name: Legana Fingerhut
     github: Legana
+    twitter: LeganaFingerhut
   - name: César Herrera
     github: CexyNature
   - name: Kevin Bairos-Novak

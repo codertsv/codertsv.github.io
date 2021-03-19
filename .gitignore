@@ -6,5 +6,4 @@ Gemfile.lock
 assets/.DS_Store
 .Rproj.user
 .Rhistory
-.gitignore
 codertsv.github.io.Rproj
