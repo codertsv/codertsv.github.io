@@ -4,3 +4,7 @@ _site
 Gemfile.lock
 .DS_Store
 assets/.DS_Store
+.Rproj.user
+.Rhistory
+.gitignore
+codertsv.github.io.Rproj
