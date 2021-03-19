@@ -9,7 +9,7 @@ categories:
 # - Q&A
 # - Blog
 tags:
- - Git
+ - git
  - César
  - Chloë
 # - Python
