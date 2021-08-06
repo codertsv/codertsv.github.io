@@ -16,30 +16,28 @@ CodeR-TSV is composed and represented by people from diverse genders, background
 <div class="container">
 <div class="row">
 <div class="col-sm">
-<h2>Members</h2>
+<h2>Organising committee</h2>
 
 
-{% for member in site.data.members.members %}
+{% for member in site.data.members.organisers %}
 
 <ul class="social-icons" style="list-style: none;">
     <li>
         <b>{{ member.name }}</b>
     </li>
-    {% if member.twitter %}
     <li>
+    {% if member.twitter %}
     <a style="text-decoration:none" href="https://twitter.com/{{ member.twitter }}" rel="nofollow noopener noreferrer">
         <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span>
     </a>
-    </li>
     {% endif %}
     {% if member.github %}
-    <li>
     <a style="text-decoration:none" href="https://github.com/{{ member.github }}" rel="nofollow noopener noreferrer">
         <i class="fab fa-fw fa-github" aria-hidden="true"></i>
         <span class="label">GitHub</span>
     </a>
-    </li>
     {% endif %}
+    </li>
 </ul>
 {% endfor %}
 
@@ -47,15 +45,17 @@ CodeR-TSV is composed and represented by people from diverse genders, background
 
   
 <div class="col-sm">
-<h2>Organising committee</h2>
+<h2>Past committee</h2>
 
 
-{% for member in site.data.members.organisers %}
+{% for member in site.data.members.pastorganisers %}
 <ul class="social-icons" style="list-style: none;">
     <li>
         <b>{{ member.name }}</b>
     </li>
+    <li>
     {% if member.twitter %}
+
     <a style="text-decoration:none" href="https://twitter.com/{{ member.twitter }}" rel="nofollow noopener noreferrer">
         <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span>
     </a>
@@ -66,8 +66,41 @@ CodeR-TSV is composed and represented by people from diverse genders, background
         <span class="label">GitHub</span>
     </a>
     {% endif %}
+    </li>
 </ul>
 {% endfor %}
+
 </div>
 </div>
+
+<div class="row">
+<div class="col-sm">
+
+<h2>Members</h2>
+
+{% for member in site.data.members.members %}
+<ul class="social-icons" style="list-style: none;">
+    <li>
+        <b>{{ member.name }}</b>
+    </li>
+    <li>
+    {% if member.twitter %}
+
+    <a style="text-decoration:none" href="https://twitter.com/{{ member.twitter }}" rel="nofollow noopener noreferrer">
+        <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span>
+    </a>
+    {% endif %}
+    {% if member.github %}
+    <a style="text-decoration:none" href="https://github.com/{{ member.github }}" rel="nofollow noopener noreferrer">
+        <i class="fab fa-fw fa-github" aria-hidden="true"></i>
+        <span class="label">GitHub</span>
+    </a>
+    {% endif %}
+    </li>
+</ul>
+{% endfor %}
+
+</div>
+</div>
+
 </div>

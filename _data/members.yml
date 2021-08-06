@@ -5,26 +5,35 @@ members:
     github: ErikaGress
     twitter: ERika_GRess
 organisers:
+  - name: Natalia Andrade Rodriguez
+    github: China2302
+  - name: Kevin Bairos-Novak
+    github: ecolology
+    twitter: ecolology
+  - name: Legana Fingerhut
+    github: Legana
+    twitter: LeganaFingerhut
+  - name: Jacob Westaway
+    github: JacobAFW
+    twitter: jacobwestaway
+  - name: Lorenzo Bertola
+    github: MboiTui
+    twitter: ItsFrogday
+  - name: Cholë Boote
+    github: BooteCG
+    twitter: CGBoote
   - name: Ira Cooke
     github: iracooke
     twitter: iracooke
   - name: Peter Cowman
     github: PeteCowman
-  - name: Cholë Boote
-    github: BooteCG
-    twitter: CGBoote
+  - name: Jia Zhang
+    github: bakeronit
+
+pastorganisers:
+  - name: César Herrera
+    github: CexyNature
   - name: Wytamma Wirth
     github: wytamma
     twitter: wytamma
-  - name: Jia Zhang
-    github: bakeronit
-  - name: Natalia Andrade Rodriguez
-    github: China2302
-  - name: Legana Fingerhut
-    github: Legana
-    twitter: LeganaFingerhut
-  - name: César Herrera
-    github: CexyNature
-  - name: Kevin Bairos-Novak
-    github: ecolology
-    twitter: ecolology
+
