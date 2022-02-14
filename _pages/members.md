@@ -30,7 +30,6 @@ CodeR-TSV is composed and represented by people from diverse genders, background
     <a style="text-decoration:none" href="https://twitter.com/{{ member.twitter }}" rel="nofollow noopener noreferrer">
         <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span>
     </a>
-    </li>
     {% endif %}
     {% if member.github %}
     <a style="text-decoration:none" href="https://github.com/{{ member.github }}" rel="nofollow noopener noreferrer">
@@ -59,7 +58,6 @@ CodeR-TSV is composed and represented by people from diverse genders, background
     <a style="text-decoration:none" href="https://twitter.com/{{ member.twitter }}" rel="nofollow noopener noreferrer">
         <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span>
     </a>
-    </li>
     {% endif %}
     {% if member.github %}
     <a style="text-decoration:none" href="https://github.com/{{ member.github }}" rel="nofollow noopener noreferrer">
