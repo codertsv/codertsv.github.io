@@ -48,7 +48,7 @@ CodeR-TSV is composed and represented by people from diverse genders, background
 <h2>Past committee</h2>
 
 
-{% for member in site.data.members.members %}
+{% for member in site.data.members.pastorganisers %}
 <ul class="social-icons" style="list-style: none;">
     <li>
         <b>{{ member.name }}</b>
@@ -74,10 +74,11 @@ CodeR-TSV is composed and represented by people from diverse genders, background
 </div>
 
 <div class="row">
-    
-<h2>Past committee</h2>
+<div class="col-sm">
 
-{% for member in site.data.members.pastorganisers %}
+<h2>Members</h2>
+
+{% for member in site.data.members.members %}
 <ul class="social-icons" style="list-style: none;">
     <li>
         <b>{{ member.name }}</b>
@@ -98,7 +99,8 @@ CodeR-TSV is composed and represented by people from diverse genders, background
     </li>
 </ul>
 {% endfor %}
-    
+
+</div>
 </div>
 
 </div>
