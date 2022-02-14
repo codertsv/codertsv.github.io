@@ -7,9 +7,6 @@ members:
   - name: Björn Illing
     github: BjoernIlling
     twitter: Bjoern_Illing
-  - name: Jacob Westaway
-    github: JacobAFW
-    twitter: JacobWestaway
   - name: Donald McKnight
     github: donaldtmcknight
     twitter: donaldmcknight2
@@ -18,11 +15,6 @@ members:
     twitter: MagenaMarzonie
   - name: Makeely Blandford
     github: makblandford
-  - name: Stefano Montanari
-    github: adrem1
-  - name: Lorenzo Bertola
-    github: MboiTui
-    twitter: ItsFrogday
 
 organisers:
   - name: Natalia Andrade Rodriguez
