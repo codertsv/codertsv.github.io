@@ -25,8 +25,8 @@ CodeR-TSV is composed and represented by people from diverse genders, background
     <li>
         <b>{{ member.name }}</b>
     </li>
-    {% if member.twitter %}
     <li>
+    {% if member.twitter %}
     <a style="text-decoration:none" href="https://twitter.com/{{ member.twitter }}" rel="nofollow noopener noreferrer">
         <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span>
     </a>
@@ -36,8 +36,8 @@ CodeR-TSV is composed and represented by people from diverse genders, background
         <i class="fab fa-fw fa-github" aria-hidden="true"></i>
         <span class="label">GitHub</span>
     </a>
-    </li>
     {% endif %}
+    </li>
 </ul>
 {% endfor %}
 
