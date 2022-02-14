@@ -45,7 +45,7 @@ CodeR-TSV is composed and represented by people from diverse genders, background
 
   
 <div class="col-sm">
-<h2>Past committee</h2>
+<h2>Members</h2>
 
 
 {% for member in site.data.members.members %}
@@ -74,7 +74,8 @@ CodeR-TSV is composed and represented by people from diverse genders, background
 </div>
 
 <div class="row">
-    
+<div class="col-sm">
+
 <h2>Past committee</h2>
 
 {% for member in site.data.members.pastorganisers %}
@@ -98,7 +99,8 @@ CodeR-TSV is composed and represented by people from diverse genders, background
     </li>
 </ul>
 {% endfor %}
-    
+
+</div>
 </div>
 
 </div>
