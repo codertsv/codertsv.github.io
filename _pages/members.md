@@ -41,7 +41,6 @@ CodeR-TSV is composed and represented by people from diverse genders, background
 
 
 </div>
-</div>
     
 <div class="col-sm">
 <h2>Members</h2>
