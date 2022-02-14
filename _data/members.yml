@@ -25,26 +25,36 @@ members:
     twitter: ItsFrogday
 
 organisers:
-  - name: Ira Cooke
-    github: iracooke
-    twitter: iracooke
-  - name: Peter Cowman
-    github: PeteCowman
-  - name: Cholë Boote
-    github: BooteCG
-    twitter: CGBoote
-  - name: Wytamma Wirth
-    github: wytamma
-    twitter: wytamma
-  - name: Jia Zhang
-    github: bakeronit
   - name: Natalia Andrade Rodriguez
     github: China2302
   - name: Legana Fingerhut
     github: Legana
     twitter: LeganaFingerhut
-  - name: César Herrera
-    github: CexyNature
   - name: Kevin Bairos-Novak
     github: ecolology
     twitter: ecolology
+  - name: Jacob Westaway
+    github: JacobAFW
+    twitter: jacobwestaway
+  - name: Lorenzo Bertola
+    github: MboiTui
+    twitter: ItsFrogday
+  - name: Cholë Boote
+    github: BooteCG
+    twitter: CGBoote
+  - name: Ira Cooke
+    github: iracooke
+    twitter: iracooke
+  - name: Peter Cowman
+    github: PeteCowman
+  - name: Jia Zhang
+    github: bakeronit
+
+Previous organisers:
+  - name: César Herrera
+    github: CexyNature
+  - name: Wytamma Wirth
+    github: wytamma
+    twitter: wytamma
+    
+
