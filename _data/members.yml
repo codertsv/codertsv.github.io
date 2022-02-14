@@ -27,12 +27,12 @@ members:
 organisers:
   - name: Natalia Andrade Rodriguez
     github: China2302
-  - name: Legana Fingerhut
-    github: Legana
-    twitter: LeganaFingerhut
   - name: Kevin Bairos-Novak
     github: ecolology
     twitter: ecolology
+  - name: Legana Fingerhut
+    github: Legana
+    twitter: LeganaFingerhut
   - name: Jacob Westaway
     github: JacobAFW
     twitter: jacobwestaway
@@ -50,11 +50,10 @@ organisers:
   - name: Jia Zhang
     github: bakeronit
 
-Previous organisers:
+pastorganisers:
   - name: César Herrera
     github: CexyNature
   - name: Wytamma Wirth
     github: wytamma
     twitter: wytamma
-    
 
