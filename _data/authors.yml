@@ -26,3 +26,15 @@ Wytamma:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://wytamma.com/"
+
+Lorenzo Bertola:
+  name        : "Lorenzo Bertola"
+  bio         : "PhD Candidate in Evolutionary and Conservation Genomics. Frogs are cool"
+  avatar      : "https://avatars.githubusercontent.com/u/13726005?s=460&u=1377cd4e696736ee8f597c4ba5cc5ffea725c729&v=4"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/MboiTui"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/ItsFrogday"
