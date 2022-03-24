@@ -22,6 +22,14 @@ header:
 # image: assets/images/...
 ---
 
+## Learning Objectives
+
+In this lesson you will learn:
+
+- The overall structure of the JCU HPC
+- How to obtain a JCU HPC account
+- How to access the JCU HPC
+
 ## Introducing the JCU HPRC
 
 Hello everyone!
@@ -49,12 +57,12 @@ Once you have an HPC account, accessing the HPC is achieved using the "SSH" tool
 Mac computers come with a terminal pre-installed. The terminal can be found using the searchlight tool, by holding down the command key and pressing the spacebar. In the searchbar that appears type 'Terminal' and open the app. This will open up a terminal window.
 
 ### Finding the terminal on a Windows
-**Can a windows user fill in this part please?**
+The Windows version of the terminal is known as 'Command Prompt', or 'Power Shell' in newer versions. To find the Command prompt, the easiest way is to right click the Windows icon in the bottom left corner of your screen and then selecting the Command Prompt. The same menu can be opened by clicking **Windows Key + X**. *This parts needs testing and input from an experienced Windows user*.
 
 ### Accessing the HPC
-Now that we have terminal window open, with the SSH tool available, and we have obtained a JCU HPC account, we can finally access the HPC.
+Now that we have terminal/command prompt window open, with the SSH tool available, and we have obtained a JCU HPC account, we can finally access the HPC.
 
-To do this, we will go ahead and type the following in the terminal window. NOTE: You will have to replace "jc000000" with your unique jc identification.
+To do this, we will go ahead and type the following in the terminal window. NOTE: You will have to replace "jc000000" with your unique jc student/staff identification.
 
 `ssh jc000000@zodiac.hpc.jcu.edu.au`
 
@@ -66,5 +74,12 @@ Type the password and press enter. NOTE: you will not see any character appearin
 
 ![Fig. 3: Successful login](assets/images/HPCaccess2.png)
 
+### Accessing the HPC off campus
 
+Note, that if you are accessing the HPC from off-campus you will have to add a port to your ssh command, like below:
 
+`ssh jc000000@zodiac.hpc.jcu.edu.au -p 8822`
+
+### Conclusion!
+
+Well done, you are now connected to the JCU HPRC, or HPC for short! In the next lesson we will learn how to interact with the HPC using bash. In particular, how to create files and directories, move them, copy them, rename them; and how to transfer files between your local computer and the HPC. See you there!
