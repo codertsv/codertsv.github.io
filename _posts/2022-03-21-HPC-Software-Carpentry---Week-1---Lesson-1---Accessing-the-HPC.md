@@ -59,8 +59,10 @@ Mac computers come with a terminal pre-installed. The terminal can be found usin
 ### Finding the terminal on a Windows
 The Windows version of the terminal is known as 'Command Prompt', or 'Power Shell' in newer versions. To find the Command prompt, the easiest way is to right click the Windows icon in the bottom left corner of your screen and then selecting the Command Prompt. The same menu can be opened by clicking **Windows Key + X**. *This parts needs testing and input from an experienced Windows user*.
 
+Many more experienced windows user have recommended **MobaXTerm**, which can be downloaded [here](https://mobaxterm.mobatek.net/). The reason for the recommendation was how it incorporates many tools required for remote computing, including the SSH client (to access/login to a remote computer) and the FTP client (to transfer files between your local machine and the remote computer).
+
 ### Accessing the HPC
-Now that we have terminal/command prompt window open, with the SSH tool available, and we have obtained a JCU HPC account, we can finally access the HPC.
+Now that we have terminal/command prompt window open and we have obtained a JCU HPC account, we can finally access the HPC. We will achieve using an SSH Client, or Secure SHell. This tool offers a way to establish a secure, encrypted connection between two sides (e.g., local computer and the HPC), authenticating each side to the other, and passing commands and outputs back and forth.
 
 To do this, we will go ahead and type the following in the terminal window. NOTE: You will have to replace "jc000000" with your unique jc student/staff identification.
 
