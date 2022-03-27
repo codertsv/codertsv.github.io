@@ -16,6 +16,7 @@ tags:
  - HPC
 # - Shiny
  - Bash
+ - Lorenzo
 header:
 # image: assets/images/...
 ---
@@ -202,11 +203,11 @@ Then we create a file with nano by typing `nano` followed with the name of the f
 
 This not only creates the file but also opens it. In particular it opens an empty text file, where we can start typing our metadata information.
 
-![Fig. 3: empty nano file](/assets/images/HPC_nano.png)
+![Fig. 3: empty nano file](/assets/images/HPC_Nano.png)
 
 So I might type a quick description for my folder and folder structure.
 
-![Fig. 4: my first nano file](/assets/images/HPC_nano.png)
+![Fig. 4: my first nano file](/assets/images/HPC_Nano2.png)
 
 Note that nano is not a point and click text editor. You can only move around with arrows. This can be a bit clunky but it's okay for small files. For bigger files you might want to learn some of nano's shortcuts or see what other options you might have available (more below).
 
