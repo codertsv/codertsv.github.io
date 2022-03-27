@@ -103,7 +103,7 @@ If you are ever curious of what additional options might exist, or how to use a 
 {: .language-bash}
 
 
-![Fig. 1: Result of running man command for the ls command](assets/images/HPC_ManLS.png)
+![Fig. 1: Result of running man command for the ls command](/assets/images/HPC_ManLS.png)
 
 Alternatively, you can use the `--help` option for a command to get a quick guide on how to use it.
 
@@ -113,7 +113,7 @@ Alternatively, you can use the `--help` option for a command to get a quick guid
 {: .language-bash}
 
 
-![Fig. 2: Result of running ls with the --help option](assets/images/HPC_LsHelp.png)
+![Fig. 2: Result of running ls with the --help option](/assets/images/HPC_LsHelp.png)
 
 ### Moving between directories
 There is one final command that you will need to move between different folders/directories, which is the `cd` command, for 'change directory'. So let's change our directory to our project folder.
@@ -202,11 +202,11 @@ Then we create a file with nano by typing `nano` followed with the name of the f
 
 This not only creates the file but also opens it. In particular it opens an empty text file, where we can start typing our metadata information.
 
-![Fig. 3: empty nano file](assets/images/HPC_nano.png)
+![Fig. 3: empty nano file](/assets/images/HPC_nano.png)
 
 So I might type a quick description for my folder and folder structure.
 
-![Fig. 4: my first nano file](assets/images/HPC_nano.png)
+![Fig. 4: my first nano file](/assets/images/HPC_nano.png)
 
 Note that nano is not a point and click text editor. You can only move around with arrows. This can be a bit clunky but it's okay for small files. For bigger files you might want to learn some of nano's shortcuts or see what other options you might have available (more below).
 
