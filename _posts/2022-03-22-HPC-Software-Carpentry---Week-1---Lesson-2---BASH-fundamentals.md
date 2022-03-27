@@ -20,15 +20,14 @@ header:
 # image: assets/images/...
 ---
 
-This is a work in progress. Ready by Monday 28th of March, 2022
-
 ## Learning Objectives
 
 In this lesson you will learn:
 
 - What is a UNIX command
-- Fundamental commands in bash
-- How
+- How to create, access and navigate directories using bash
+- How to create and modify files with nano
+- How to transfer files between your local machine and the HPC with FileZilla
 
 ## Interacting with the JCU HPC
 
@@ -184,44 +183,163 @@ We can check that we are back to our home directory with the `pwd` command.
 ~~~
 {: .output}
 
-#### Get files to/from HPC to/from laptop
-
-- FileZilla
-- ssh ?
-
 #### Working with files
+Now that we have explored how to navigate across and create directories, let's start populating them with some of our own files. It is good practice to include METADATA files in our project folder. These files state what the folder contains, how it was produced and modified, and what the different files within the folder are meant for. So let's create our own one. For simplicity, today we will be using `nano`.
 
-- cat to read non interactively, or to concatenate
-- cp to copy, rename
-- mv to move files
-- rm, with 2000 warnings about rm and asterisks
+First I change my directory to my project directory
 
-- nano to create and edit (easiest option)
-- emacs-nw (a lot of configuration options, lots of shortcuts)
-- vi and vim (basic and difficult to use)
-- VSCode from your local machine (see Wytamma's [post](https://blog.wytamma.com/blog/hcp-vscode/))
+~~~
+% cd ~/cool_project
+~~~
+{: .language-bash}
 
-#### Variables
+Then we create a file with nano by typing `nano` followed with the name of the file:
 
-Should I introduce variables within this lecture?
+~~~
+% nano metadata_file
+~~~
+{: .language-bash}
+
+This not only creates the file but also opens it. In particular it opens an empty text file, where we can start typing our metadata information.
+
+![Fig. 3: empty nano file](assets/images/HPC_nano.png)
+
+So I might type a quick description for my folder and folder structure.
+
+![Fig. 4: my first nano file](assets/images/HPC_nano.png)
+
+Note that nano is not a point and click text editor. You can only move around with arrows. This can be a bit clunky but it's okay for small files. For bigger files you might want to learn some of nano's shortcuts or see what other options you might have available (more below).
+
+Once you are done with your nano file you can close it with *ctrl+X*. It will ask you if you want to save. To save press the *Y* key (for Yes). You are then given the chance to change the file name. If you want to keep as is just press enter.
+
+Now if we look in our directory with `ls` we can see the file we just produced.
+
+~~~
+% ls
+~~~
+{: .language-bash}
+~~~
+figures metadata_file raw_data scripts
+~~~
+{: .output}
+
+Note that files will have a different colour from folders, highlighting their difference.
+
+Let's now explore a few commands to interact with files. If I want for example to remind myself what a file contains without having to open it I can simply use the `cat` command to read it non-interactively like so:
+
+~~~
+% cat metadata_file
+~~~
+{: .language-bash}
+~~~
+This is the metadata for the cool_project folder. 
+
+In this folder I detail the analyses I ran for my cool project.
+
+I have 3 main directories within this folder:
+
+scripts: where I store all the scripts required to run the analyses
+
+raw_data: where I store the raw_data obtained from the sampling season 2135-2136
+where we used automated drones to track 30 individuals per population of mars elephants for 265 mars days
+
+figures: where I store the figure produced by analysing the raw_data
+~~~
+{: .output}
+
+This file is starting to get long, and maybe I want to see only the first 4 or the last 4 lines without clogging up my terminal. I can use `head` and `tail` respectively:
+
+~~~
+% head -n 4 metadata_file
+~~~
+{: .language-bash}
+~~~
+This is the metadata for the cool_project folder. 
+
+In this folder I detail the analyses I ran for my cool project.
+
+~~~
+{: .output}
+
+Tail follows the same structure.
+
+Now let's say I create a new project, and I want to re-use the metadata file to save myself some writing. I can either copy the file with `cp` or move it there with `mv`.
+
+First, I create the new project folder.
+
+~~~
+% mkdir ~/new_project
+~~~
+{: .language-bash}
+
+And then I copy my file to that folder with:
+
+~~~
+% cp metadata_file ../new_project/
+~~~
+{: .language-bash}
+
+Note that I had to add `../` in front of new_project as I was currently in the 'cool_project' folder. Bot cool_project and new_project are within my home directory, so by using `../` I first changed the directory to where I want to copy the file to the parent directory, in this case my home directory, and then with `new_project` I changed to my desired folder. This can be a bit hard to figure out at the start if you are unfamiliar with programming, but it will be very useful later on, so I recommend you play around with it a bit and try and create folders in different directories and move them around with `cp` or `mv`.
+
+The move command `mv` has the same command structure as `cp` but it *moves* the file altogether (just like dragging your file from one folder to another on your laptop).
+
+Now I realise maybe that my new_project is not as cool as my previous one, so I decide to delete it. I might start by deleting its contents. To do this I need to use the `rm` command. This command is very powerful, and with great power comes great responsibility. Just as a cautionary tale, I once ran `rm` from the wrong directory and ended up deleting a whole project folder (3 months of work) from the HPC. Once something is deleted on the HPC you can't retrieve it (i.e., there is no 'bin' where deleted files go temporarily), so really make sure you do not need a file before removing it, and make sure to check your rm commands before running.
+
+Now, onto deleting! To delete the metadata_file from the new_project folder I can use the following:
+
+~~~
+% rm ../new_project/metadata_file
+~~~
+{: .language-bash}
+
+And now I list files within `new_project` I can see that it is empty as nothing is returned.
+
+~~~
+% ls ../new_project/
+~~~
+{: .language-bash}
+
+Finally I can delete the whole directory with:
+
+~~~
+% rm -rf ../new_project
+~~~
+{: .language-bash}
+
+The `-rf` options stand for `recursive` (to remove the directory and all its contents) and `forced` (to avoid prompts before removal). Now you can see how dangerous this command can be. So please BE VERY CAREFUL when using the `rm` command. One option is to always run `rm` with the `-i` option, which provides a prompt before each removal that asks you if you do actually want to remove the file/directory. 
+
+#### Alternative file editors
+The file editor I showed here, `nano`, is just one of the many available. Below I compiled a small list of some of your available options. At the end of the day it depends what works for you and matches with your current workflows and working style.
+
+Here a list with some info on why you would choose one over the other
+- `nano` to create and edit (easiest option)
+- `emacs-nw` (a lot of configuration options, lots of shortcuts)
+- `vi` and `vim` (basic and difficult to use)
+- *VSCode* from your local machine (can be used to login, transfer files and edit them. see Wytamma's [post](https://blog.wytamma.com/blog/hcp-vscode/) on the topic for more information.)
+
+#### Transfer files between local machine and HPC with FileZilla
+To conclude this lesson let's look at one of the more common ways to transfer files between your local machine (e.g., your laptop) and the HPC. This option involves using a File Transfer Protocol client (FTP client) known as FileZilla. You can download FileZilla [here](https://filezilla-project.org/). Once downloaded, you will need to create a file 'site' within FileZilla. I am not sure why it is called a site but what it achieves is that is sets up the host (JCU HPC) and guest (you) details for you to connect to the HPC with FileZilla. Nigel and Wayne have provided a guide on how to achieve this as part of the HPC documentation, which can be found [here](https://secure.jcu.edu.au/confluence/display/Public/Using+FileZilla+with+SSH+Public+Key+Authentication).
+
+I ran out of time for this bit, where I will show how to transfer files between local machine and HPC. TO-DO list Lorenzo!!
 
 ## A list of useful commands (feel free to add onto it through our github)
+Finally, I thought this would be a good place to add some general bash commands that you might find useful. If there is interest for this we can find of expanding this guide with more HPC specific commands.
 
 ### File commands
-- `ls`
-- `ls -lh`
-- `cd`
-- `pwd`
-- `mkdir`
-- `rm`
-- `cp`
-- `mv`
+- `ls`: list files in current directory
+- `ls -lh`: list files in long format (more details like size and date) and in human readable format
+- `cd ./other_directory`: change directory to 'other_directory'
+- `pwd`: print working directory. As in, where am I?
+- `mkdir`: make a directory. This essentially creates a folder
+- `rm`: remove a file/directory. Very powerful and thus dangerous. Never rush when using it
+- `cp`: copy file/directory. Structure is `cp file_to_copy copy_of_the_file`
+- `mv`: move file/directory. Same structure as cp. 
 - `touch`: create or update file
 - `nano`: create or update file
 - `cat file`: print all contents of file
 - `head -n file`: output the first n lines
 - `tail -n file`: output the last n lines
-- `chmod u+rw,g-rwx,o-rwx file` set read (r), write (w) and execute permissions for file
+- `chmod u+rw,g-rwx,o-rwx file`: set read (r), write (w) and execute permissions for file
 - `find pattern`: find files matching the pattern
 
 ### paths special characters
@@ -230,21 +348,21 @@ Should I introduce variables within this lecture?
 - `~` stands for home directory. On the JCU HPC this refers to your jc00000 directory. This character is useful for specifying absolute paths in your scripts.
 
 ### Environmental variables and aliases
-- `export VAR='value'` set a variable
-- `echo $VAR` print a variable
-- `alias ls='ls -lh'` set an alias command (e.g., now every time i type `ls` it will be interpreted as `ls -lh`)
+- `export VAR='value'`: set a variable
+- `echo $VAR`: print a variable
+- `alias ls='ls -lh'`: set an alias command (e.g., now every time i type `ls` it will be interpreted as `ls -lh`)
 
 ### Searching
-- `grep pattern file`
+- `grep pattern file`: search for 'pattern' within 'file'
 
 ### Other useful tools
-- `man command` show the manual for command
-- `command --help` get quick help on command
+- `man command`: show the manual for command
+- `command --help`: get quick help on command
 
 ### Compression
-- `gzip file` compress file
-- `gunzip file` uncompress file
+- `gzip file`: compress file
+- `gunzip file`: uncompress file
 
 ### Server info
-- `whoami`
-- `hostname`
+- `whoami`: shows the user's usernam
+- `hostname`: shows the current host
