@@ -1,5 +1,5 @@
 ---
-title:  "HPC Software Carpentry - Week 1 - Lesson 2 - BASH fundamentals"
+title:  "HPC Software Carpentry - Lesson 2 - BASH fundamentals"
 date:   2022-03-22 10:23:50 +1000
 author: Lorenzo Bertola
 excerpt_separator: <!--more-->

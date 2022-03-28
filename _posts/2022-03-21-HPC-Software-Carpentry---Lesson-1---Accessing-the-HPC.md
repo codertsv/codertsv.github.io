@@ -1,5 +1,5 @@
 ---
-title:  "HPC Software Carpentry - Week 1 - Lesson 1 - Accessing the HPC"
+title:  "HPC Software Carpentry - Lesson 1 - Accessing the HPC"
 date:   2022-03-21 15:44:26 +1000
 author: Lorenzo Bertola 
 excerpt_separator: <!--more-->
