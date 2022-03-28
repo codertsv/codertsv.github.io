@@ -40,7 +40,7 @@ HPRC stands for High Performance Research Computing. Leaving aside the '*computi
 
 ### The HPC Structure
 
-The HPC consists of **2** login nodes (nl01, nl02), a server, a scheduler, **6** computing nodes and one GPU node. The schematic below shows how these interact with each other. 
+The HPC consists of **2** login nodes (nl01, nl02), a server, a scheduler, **16** computing nodes and one GPU node. The schematic below shows how these interact with each other. 
 
 ![Fig. 1: Schematic of HPC Structure](/assets/images/HPCStructure.png)
 
