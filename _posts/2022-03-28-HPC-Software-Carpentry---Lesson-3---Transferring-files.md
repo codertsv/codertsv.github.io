@@ -110,18 +110,6 @@ After selecting **OK** WinSCP will open a windows explorer interface to your HPC
 
 ADD MORE HERE AND SOME FIGURES.
 
-#### Connect to site
-
-From the site drop down menu on the top left select zodiac and press Connect
-
-![Fig. 6: Connecting to the HPC](/assets/images/HPC_FileZilla6.png)
-
-If you successfully connected you will now see your local site (e.g., your laptop) on the left, and the remote site (i.e., the HPC) on the right. Your home folder on the HPC will have the name `jc000000`. 
-
-![Fig. 7: Successfull connection to the HPC](/assets/images/HPC_FileZilla7.png)
-
-This is where you will store your data, scripts, outputs, etc. If you just created an HPC account this folder will be empty. If you want to transfer your raw data for analyses to the HPC you can drag it from its location on your local site on the left to your desired folder on the right. 
-
 Well done! You are now all set up to transfer files between your laptop and the HPC.
 
 ## Setup ssh key
