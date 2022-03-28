@@ -318,10 +318,8 @@ Here a list with some info on why you would choose one over the other
 - `vi` and `vim` (basic and difficult to use)
 - *VSCode* from your local machine (can be used to login, transfer files and edit them. see Wytamma's [post](https://blog.wytamma.com/blog/hcp-vscode/) on the topic for more information.)
 
-#### Transfer files between local machine and HPC with FileZilla
-To conclude this lesson let's look at one of the more common ways to transfer files between your local machine (e.g., your laptop) and the HPC. This option involves using a File Transfer Protocol client (FTP client) known as FileZilla. You can download FileZilla [here](https://filezilla-project.org/). Once downloaded, you will need to create a file 'site' within FileZilla. I am not sure why it is called a site but what it achieves is that is sets up the host (JCU HPC) and guest (you) details for you to connect to the HPC with FileZilla. Nigel and Wayne have provided a guide on how to achieve this as part of the HPC documentation, which can be found [here](https://secure.jcu.edu.au/confluence/display/Public/Using+FileZilla+with+SSH+Public+Key+Authentication).
-
-I ran out of time for this bit, where I will show how to transfer files between local machine and HPC. TO-DO list Lorenzo!!
+## Conclusion
+In this lesson we learnt a few fundamental commands to navigate (e.g., create, erase, change directories), as well as how to create, edit and work with files.
 
 ## A list of useful commands (feel free to add onto it through our github)
 Finally, I thought this would be a good place to add some general bash commands that you might find useful. If there is interest for this we can find of expanding this guide with more HPC specific commands.
