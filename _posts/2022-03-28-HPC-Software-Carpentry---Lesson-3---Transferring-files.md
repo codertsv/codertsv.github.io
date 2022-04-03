@@ -112,6 +112,53 @@ ADD MORE HERE AND SOME FIGURES.
 
 Well done! You are now all set up to transfer files between your laptop and the HPC.
 
-## Setup ssh key
-
 ## Transfer files with `scp`
+Finally, you can transfer files directly through the command line using the `scp` command.
+
+Say for instance that you want to transfer the output of the analyses you ran onto the HPC (remote server) to your laptop, and you are currently working on your laptop. Then you can use the below command from your terminal.
+
+~~~
+% scp username@zodiac.hpc.jcu.edu.au:~/path/to/file.txt ~/Desktop
+~~~
+{: .language-bash}
+~~~
+file.txt                                      100%   11     0.2KB/s   00:00
+~~~
+{: .output}
+
+If you are using the JCU HPC your username will be the jc000000 id. Alternatively you can transfer from your computer to the hpc with:
+
+~~~
+% scp ~/Desktop/file.txt username@zodiac.hpc.jcu.edu.au:~/path/where/to/save/file
+~~~
+{: .language-bash}
+~~~
+file.txt                                      100%   11     0.2KB/s   00:00
+~~~
+{: .output}
+
+Additionally, you can also transfer between two remote servers 
+
+~~~
+% scp username@remote_1:/file/to/send username@remote_2:/where/to/put
+~~~
+{: .language-bash}
+
+Finally, if you are using `scp` from outside campus you will need to add the -p 8822 port as per below:
+
+~~~
+% scp -P8822 username@zodiac.hpc.jcu.edu.au:~/path/to/file.txt ~/Desktop
+~~~
+{: .language-bash}
+~~~
+file.txt                                      100%   11     0.2KB/s   00:00
+~~~
+{: .output}
+
+## Downloading data directly from databases
+One final commmon way you will transfer your data to the HPC for your analyses is by downloading it directly from a database. For instance you might download weather data for your species distribution modelling from the Bureau of Meteorology, or you might download the genome sequencing data from a large collaborative project from the project/organisation database. Often databases and projects will have a set method to download their data, so it is beyond the scope of this post to show you all options. But, to give an example, let's look at a common command to retrive data from the web: `wget`.
+
+EDIT: I used to have a nice tutorial script on scraping weather data from the bom with wget but it doesn't work anymore :/ I will need to update this.
+
+## Setup ssh key
+To-do
