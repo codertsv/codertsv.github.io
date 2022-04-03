@@ -35,7 +35,14 @@ I this lesson I use R as most new students that asked me how to use the HPC usua
 
 ### R in interactive mode
 
-First of all we will simply start R within the HPC. This will 'switch our language from bash to R'. Think of this as if you opened R Studio and are now writing your code in R. You can enter one line of code at a time and run it. Notice how your command prompt has changed from `[jc000000@ln01:2 ~]%` to simply `>`. 
+First of all we will simply start R within the HPC. This will 'switch our language from bash to R'. Think of this as if you opened R Studio and are now writing your code in R. You can enter one line of code at a time and run it. To do this we type the following:
+
+~~~
+singularity run $SING/R-4.1.2.sif R
+~~~
+{: .language-bash}
+
+Notice how your command prompt has changed from `[jc000000@ln01:2 ~]%` to simply `>`. For now do not worry too much about what this command does. In brief, it is running the `singularity` command to run the singularity version of R within the HPC. We will cover containers, singularity, etc in next week lesson if you are interested. 
 
 For this first example we will use one of the many built in datasets. In particular, the USA arrests datasets containing data on crimes and similar.
 
