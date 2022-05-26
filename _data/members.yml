@@ -4,6 +4,23 @@ members:
   - name: Erika Gress
     github: ErikaGress
     twitter: ERika_GRess
+<<<<<<< HEAD
+=======
+  - name: Björn Illing
+    github: BjoernIlling
+    twitter: Bjoern_Illing
+  - name: Donald McKnight
+    github: donaldtmcknight
+    twitter: donaldmcknight2
+  - name: Magena Marzonie
+    github: magenamarzonie
+    twitter: MagenaMarzonie
+  - name: Makeely Blandford
+    github: makblandford
+  - name: Stefano Montanari
+    github: adrem1
+
+>>>>>>> 5a7a7559a4bbe39a3aab0f6790b8ff7ceef0f9af
 organisers:
   - name: Natalia Andrade Rodriguez
     github: China2302
